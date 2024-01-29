@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/student
+    password: Databasedb*123
+  jpa:
+    properties:
+      Hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+      management:
+        endpoints:
+          web:
+            exposure:
+              include:"*"
